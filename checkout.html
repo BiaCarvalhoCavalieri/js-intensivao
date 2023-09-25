@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> js intensivao store</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="relative">
+  <header class="flex items-center justify-between p-8 max-w-full lg:p-4">
+    <img src="./assets/header/logo.svg" alt="Logo da loja Furniro" class="lg:h-8 lg:w-36"/>
+    <ul class="menu__container flex items-center gap-x-16 lg:hidden">
+      <li class="menu__item">Home</li>
+      <li class="menu__item">Shop</li>
+      <li class="menu__item">About</li>
+      <li class="menu__item">Contact</li>
+    </ul>
+    <div class="options__icons gap-x-10 flex items-center lg:gap-x-2 lg:items-baseline">
+      <button class="option__item">
+        <img src="./assets/header/user-icon.svg" alt="icone de usuário" class="lg:h-5 lg:w-5">
+      </button>
+      <button class="option__item">
+        <img src="./assets/header/search-icon.svg" alt="icone de busca" class="lg:h-5 lg:w-5">
+      </button>
+      <button class="option__item"> 
+        <img src="./assets/header/wishlist-icon.svg" alt="icone de wishlist" class="lg:h-5 lg:w-5">
+      </button>
+      <div class="option__cart-wrapper">
+        <button class="option__item" id="cart__icon">
+          <img src="./assets/header/cart-icon.svg" alt="icone de usuário" class="lg:h-5 lg:w-5">
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="checkout__container">
+    <div  class="checkout__banner-container">
+      <img src="./assets/checkout/checkout-banner.png" alt="banner checkout" class="w-screen lg:h-[20.5rem] lg:w-full lg:object-cover">
+    </div>
+    <div  class="checkout__form-container w-full mx-auto max-w-5xl">
+      <form class="flex w-100 px-5 py-10 gap-4 grow justify-center lg:flex-col lg:items-center">
+        <section id="user__infos" class="w-1/2 px-10 lg:w-full">
+          <p class="mb-5 text-left text-4xl font-bold">Billing details</p>
+          <div class="flex py-3 w-100">
+            <div class="flex flex-col w-1/2 pr-2">
+              <label for="firstname" class="font-medium text-base mb-2">First Name</label>
+              <input 
+                type="text"  
+                id="name" 
+                class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+                required
+              />
+            </div>
+            <div class="flex flex-col w-1/2 pl-2">
+              <label for="lastname" class="font-medium text-base mb-2">Last Name</label>
+              <input 
+                type="text"  
+                id="lastname" 
+                class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+                required
+              />
+            </div>
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="company" class="font-medium text-base  mb-2">Company name (Optional)</label>
+            <input 
+              type="text"  
+              id="company" 
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="country" class="font-medium text-base  mb-2">Country / Region</label>
+            <input 
+              type="text"  
+              id="country"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="street" class="font-medium text-base  mb-2">Street Address</label>
+            <input 
+              type="text"  
+              id="street"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="city" class="font-medium text-base  mb-2">Town / City</label>
+            <input 
+              type="text"  
+              id="city"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="province" class="font-medium text-base  mb-2">Province</label>
+            <input 
+              type="text"  
+              id="province"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="postalCode" class="font-medium text-base  mb-2">ZIP Code</label>
+            <input 
+              type="number"  
+              id="postalCode"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="phone" class="font-medium text-base  mb-2">Phone</label>
+            <input 
+              type="text"  
+              id="phone"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+          <div class="flex flex-col py-3">
+            <label for="email" class="font-medium text-base  mb-2">Email address</label>
+            <input 
+              type="email"  
+              id="email"
+              class="rounded-lg px-2 border-2 border-[#9f9f9f] py-1 h-16" 
+              required
+            />
+          </div>
+        </section>
+        <section 
+          id="products__infos" 
+          class="w-1/2 py-5 px-9 lg:w-full">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-2xl font-medium">Product</h2>
+            <h2 class= "text-2xl font-medium">Subtotal</h2>
+          </div>
+          <div id="products__container-checkout" class="h-auto overflow-y-auto  mb-5">
+
+          </div>
+          <div
+            id="total__container-infos"
+            class="h-1/4">
+            <div class="flex items-center justify-between mb-8">
+              <h2 class="text-2xl font-medium">Total</h2>
+              <h2 id="total__value" class= "text-2xl font-medium"></h2>
+            </div>
+            <div class="total__payments-infos pt-5 border-t-2 border-[#D9D9D9]">
+              <label class="flex items-center gap-3">
+                <input type="radio" name="payment" value="transfer-payment" class="appearance-none w-4 h-4 border border-[#9f9f9f] checked:bg-black rounded-lg cursor-pointer box-border" required> 
+                Direct Bank Transfer
+              </label>
+              <p class="pb-5 pt-2 text-base font-light text-[#9f9f9f]">
+                Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+              </p>
+              <label class="flex items-center gap-3">
+                <input type="radio" name="payment" value="delivery-payment" class="appearance-none w-4 h-4 border border-[#9f9f9f] checked:bg-black rounded-lg cursor-pointer box-border" required>
+                Cash On Delivery
+              </label>
+            </div>
+            <p class="text-base font-light mt-5 mb-10">
+              Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our
+              <b class="font-semibold">privacy policy.</b> 
+            </p>
+            <div class="flex w-full items-center justify-center">
+              <button
+                class=" w-80 h-16 border rounded-2xl text-xl font-normal p-1 hover:text-white hover:bg-slate-900 lg:text-white lg:bg-slate-900"
+                type="submit"
+                id="buy__products-button"
+              >
+              Place order
+              </button>
+            </div>
+          </div>
+
+        </section>
+      </form>
+    </div>
+  </main>
+  <script src="./checkout.js" type="module"></script>
+</body>
+</html>
