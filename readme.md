@@ -30,9 +30,11 @@
 
 ## 🔥 Usage Instructions
 
-1. Faça um clone desse repositório;
+1. Clone this repository;
 
-2. Rode o comando `npm run dev` para inicializar o servidor em desenvolvimento;
+2. Run the npm install command to install the dependencies;
+
+3. Run the npm run dev command to start the development server;
 
 ## Acesse o resultado pelo link
 - [Furniro Store](/#)
