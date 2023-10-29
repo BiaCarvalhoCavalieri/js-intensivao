@@ -92,7 +92,7 @@ export function createSimpleProduct(productId, idHTMLContainer, productQuantity)
 
     productCardElement.classList.add
     const productCard = `       
-        <img class="cart__product-img w-28 h-28 rounded-lg" src="./assets/${product.img}" alt="${product.name}">
+        <img class="cart__product-img w-28 h-28 rounded-lg" src="./public/images/${product.img}" alt="${product.name}">
         <div class="cart__product-infos">
             <span class="cart__product-name">${product.name}</span>
             <div class="cart__product-infos--numbers">
