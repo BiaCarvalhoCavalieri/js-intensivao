@@ -51,7 +51,7 @@ function createProductIntoCart(productId){
 
     productCardElement.classList.add
     const productCard = `       
-        <img class="cart__product-img w-28 h-28 rounded-lg" src="./assets/${product.img}" alt="${product.name}">
+        <img class="cart__product-img w-28 h-28 rounded-lg" src="./public/images/${product.img}" alt="${product.name}">
         <div class="cart__product-infos">
         <span class="cart__product-name mb-2">${product.name}</span>
         <div class="cart__product-infos--numbers flex gap-x-4 items-center">
@@ -61,7 +61,7 @@ function createProductIntoCart(productId){
         </div>
         </div>
         <button class="cart__product-remove--item" id="product__remove-${productId}">
-            <img src="./assets/header/remove-product-icon.svg" alt="remove item button">
+            <img src="./public/images/header/remove-product-icon.svg" alt="remove item button">
         </button>
     `
     productCardElement.innerHTML = productCard

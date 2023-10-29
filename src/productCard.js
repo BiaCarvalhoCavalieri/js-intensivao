@@ -5,7 +5,7 @@ export function renderProducts() {
     for(const product of products) {
         const productCard = `
             <div class="shelf__product-container bg-[#f4f5f7] relative" id="product-${product.id}">
-                <img class="shelf__product-img w-70 h-74 lg:w-62 lg:h-66" src="./assets/${product.img}" alt="mesas de apoio na cor branca">
+                <img class="shelf__product-img w-70 h-74 lg:w-62 lg:h-66" src="./public/images/${product.img}" alt="mesas de apoio na cor branca">
                 <span class="shelf__product-discountFlag absolute text-white bg-[#E97171] flex items-center justify-center top-5 right-5 w-12 h-12 rounded-3xl">${product.discount}</span>
                 <div class="shelf__product-infos p-4">
                     <h4 class="shelf__product-name text-[#3A3A3A] text-2xl font-semibold">${product.name}</h4>
